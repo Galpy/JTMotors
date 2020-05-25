@@ -1,7 +1,7 @@
 body{
-	background:#699;
+	background:white;
 	font-size:40;
-	font-family: arial;
+	font-family: moonglade;
 	margin:0;
 }
 h1 {
@@ -43,4 +43,28 @@ nav ul li a {
 
 footer {
 	clear: both;
+	text-align: center;
 }
+
+.navbar {
+	background-color:black;
+}
+
+.navbar-nav {
+	margin-left:auto !important;
+}
+
+.nav-item {
+	margin: 0 100px;
+}
+
+.responsive {
+	width: 50%;
+	background-color: #699;
+	border-color:#699;
+	border-radius: 10px
+	height: auto;
+}
+
+
+
