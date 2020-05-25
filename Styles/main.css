@@ -1,0 +1,46 @@
+body{
+	background:#699;
+	font-size:40;
+	font-family: arial;
+	margin:0;
+}
+h1 {
+	color:#111;
+	text-align:center;
+}
+
+
+.pageNav li {
+	display: inline-block;
+	list-style-type: none;
+	color:white;
+	width: 33%;
+	text-align:center;
+
+}
+
+nav ul li a {
+	color:white;
+}
+#carList li {
+	list-style-type: none;
+	background: #222;
+	border-radius: 10px;
+	float: left;
+	padding: 2%;
+	margin: 2%;
+	width: 25%;
+	color: white;
+	text-align: center;
+}
+
+.col {
+	background: #222;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+}
+
+footer {
+	clear: both;
+}
