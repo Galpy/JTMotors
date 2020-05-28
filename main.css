@@ -34,7 +34,7 @@ nav ul li a {
 	text-align: center;
 }
 
-.col {
+.introductionCol {
 	background: #222;
 	border-radius: 10px;
 	color: white;
@@ -66,10 +66,12 @@ footer {
 	height: auto;
 }
 
-.form-inline {
-	margin: 0 30%;
+.btn {
+	color: black;
+	border-color: black
 }
 
-.form-control {
+.searchBarForm {
+	margin-top: 10px !important;
+	margin-left: 12% !important;
 }
-
