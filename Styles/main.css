@@ -1,40 +1,23 @@
 body{
 	background:white;
-	font-size:40;
-	font-family: moonglade;
+	font-size:16px;
+	font-family: "Dispence";
 	margin:0;
 }
-h1 {
-	color:#111;
-	text-align:center;
-}
 
-
-.pageNav li {
-	display: inline-block;
-	list-style-type: none;
-	color:white;
-	width: 33%;
-	text-align:center;
-
-}
-
-nav ul li a {
-	color:white;
-}
 #carList li {
+	display: inline-block;
 	list-style-type: none;
 	background: #222;
 	border-radius: 10px;
-	float: left;
 	padding: 2%;
-	margin: 2%;
+	margin: 3%;
 	width: 25%;
 	color: white;
 	text-align: center;
 }
 
-.col {
+.introductionCol {
 	background: #222;
 	border-radius: 10px;
 	color: white;
@@ -44,6 +27,7 @@ nav ul li a {
 footer {
 	clear: both;
 	text-align: center;
+	font-size:12px;
 }
 
 .navbar {
@@ -58,13 +42,29 @@ footer {
 	margin: 0 100px;
 }
 
-.responsive {
+.JTMotorsIcon {
 	width: 50%;
 	background-color: #699;
 	border-color:#699;
 	border-radius: 10px
 	height: auto;
+	margin-left:25%;
 }
 
+.searchBarForm {
+	margin-top: 10px !important;
+	margin-left: 12% !important;
+}
 
+#carList li .showOnHover {
+	display: none;
+}
+
+#carList li:hover .showOnHover {
+	display: inline-block;
+}
+
+#carList li:hover {
+	box-shadow: 0 0 12px #666;
+}
 
