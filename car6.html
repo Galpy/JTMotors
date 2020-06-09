@@ -11,7 +11,7 @@
 <body>
 	<header>
 		<a href="home.html">
-		<img src= "Images\IMG_4352.jpg" class="JTMotorsIcon responsive">
+		<img src= "Images\IMG_4352.jpg" class="JTMotorsIcon responsive" href="home.html">
 	</a>
 	</header>
 	<header>
@@ -19,14 +19,13 @@
 			 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			 </button>
-
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-			      <li class="nav-item active">
-			        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
-			      </li>
+				<ul class="navbar-nav mr-auto ">
 			      <li class="nav-item">
-			        <a class="nav-link" href="inventory.html">Inventory</a>
+			        <a class="nav-link" href="home.html">Home </a>
+			      </li>
+			      <li class="nav-item active">
+			        <a class="nav-link" href="inventory.html">Inventory<span class="sr-only">(current)</span></a>
 			      </li>
 			      <li class="nav-item">
 			        <a class="nav-link" href="aboutus.html">About Us</a>
@@ -35,19 +34,28 @@
 			</div>
 		</nav>	
 	</header>
-	<div class="container">
-	<div class="row">
-		<div class="introductionCol col col-lg-12">Welcome to JT Motors</div>
-	</div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<form class="searchBarForm form-row">
+		<div class="ml-2 col-9">
+					<input class="searchBar form-control" type="search" placeholder="Search for a specific vehicle" aria-label="Search">
+				</div>
+		<div class="col-auto">
+					<a href="" class="searchButton btn btn-outline-dark" type="submit">Search</a>
+				</div>
+				</form>
+<img src="Images\Civic.jpg" class="carImage mx-auto d-block img-fluid" width=50% height=auto>
+						<p class="carInfo">
+						2020 Honda Civic
+						<br><br>
+						Miles: 32,000 <br>
+						Transmission: Automatic <br>
+						Exterior Color: Red <br>
+						</p>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-	<footer id="footer">
+<footer id="footer">
 	Phone: (405) 420-2816 <br>
 	<a href="JTMotorsAutoSales@gmail.com" class="emailLink" target="_blank"> E-mail: JTMotorsAutoSales@gmail.com </a><br>
 	<a href="https://www.google.com/maps/place/27+W+4th+St,+Edmond,+OK+73003/@35.6516077,-97.4852992,17z/data=!3m1!4b1!4m5!3m4!1s0x87b21e4d1363bd8d:0x90e2d90cb1eeb4ca!8m2!3d35.6516034!4d-97.4831052" class="addressLink" target="_blank"> Address: 27 West 4th Street, Edmond, Oklahoma 73003 </a><br>
 	©2020 JT Motors Auto Sales LLC.</footer>
-
 </body>
 </html>

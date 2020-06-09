@@ -1,34 +1,66 @@
+* {
+	margin:0;
+	padding:0;
+}
+@font-face{
+	src: url("Fonts/conthrax.ttf");
+	font-family: mainFont;
+	src: url('Fonts/conthrax-webfont.woff2');
+    src: url('Fonts/conthrax-webfont.woff');
+}
+@media screen and (min-width: 601px) {
+	body {
+		font-size:20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		font-size:10px;
+	}
+}
+
+html, body {
+	height: 100%;
+}
+
 body{
 	background:white;
-	font-size:40;
-	font-family: moonglade;
+	font-family: mainFont;
 	margin:0;
-}
-h1 {
-	color:#111;
-	text-align:center;
+	display:flex;
+	flex-direction: column;
+	min-height: 100%;
 }
 
+#container {
+	min-height:100%;
+}
 
-.pageNav li {
-	display: inline-block;
-	list-style-type: none;
+#main {
+	overflow:auto;
+	padding-bottom:110px;
+}
+
+#footer {
+	background-color: #000;
 	color:white;
-	width: 33%;
-	text-align:center;
-
+	position:relative;
+	height:110px;
+	width:100%;
+	margin-top: auto;
+	clear: both;
+	text-align: center;
+	font-size:14px;
 }
 
-nav ul li a {
-	color:white;
-}
 #carList li {
+	display: inline-block;
 	list-style-type: none;
 	background: #222;
 	border-radius: 10px;
-	float: left;
 	padding: 2%;
-	margin: 2%;
+	margin: 3%;
 	width: 25%;
 	color: white;
 	text-align: center;
@@ -38,11 +70,6 @@ nav ul li a {
 	background: #222;
 	border-radius: 10px;
 	color: white;
-	text-align: center;
-}
-
-footer {
-	clear: both;
 	text-align: center;
 }
 
@@ -58,20 +85,44 @@ footer {
 	margin: 0 100px;
 }
 
-.responsive {
+.JTMotorsIcon {
 	width: 50%;
 	background-color: #699;
 	border-color:#699;
 	border-radius: 10px
 	height: auto;
-}
-
-.btn {
-	color: black;
-	border-color: black
+	margin-left:25%;
 }
 
 .searchBarForm {
 	margin-top: 10px !important;
-	margin-left: 12% !important;
+	position:sticky;
+	width:100%;
+
+}
+
+#carList li .showOnHover {
+	display: none;
+}
+
+#carList li:hover .showOnHover {
+	display: inline-block;
+	font-size: 80%;
+	text-align: left;
+}
+
+#carList li:hover {
+	box-shadow: 0 0 12px #666;
+}
+
+p.carInfo {
+	text-align: center;
+}
+
+.carImage {
+	margin-top: 5%;
+}
+
+.addressLink, .emailLink {
+	color:white;
 }
