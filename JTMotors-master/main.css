@@ -70,6 +70,10 @@ body{
 	vertical-align: top;
 }
 
+#carList li a {
+	color: white;
+}
+
 .introductionCol {
 	background: #222;
 	border-radius: 10px;

@@ -38,7 +38,7 @@
 	</header>
 	<form class="searchBarForm form-row" >
 		<div class="ml-2 col-9">
-					<input class="searchBar form-control responsive" type="search" placeholder="Search for a specific vehicle" aria-label="Search" style="font-size:1.25vw;">
+					<input id="searchBar" class="searchBar form-control responsive" type="text" placeholder="Search for a specific vehicle" aria-label="Search" style="font-size:1.25vw;">
 				</div>
 		<div class="col-auto">
 					<a href="" class="searchButton btn btn-outline-dark" style="font-size:1.25vw;" type="submit">Search</a>
@@ -46,10 +46,10 @@
 				</form>
 <p>
 	<ul id="carList" style="font-size:1.25vw;">
-		<a href="car1.html" target="_blank">
-			<li class="car1">
+		<li class="car1" >
+			<a href="car1.html" target="_blank">
 					<img src="Images\TahoeImage.jpg" class="img-fluid carImageMain">
-						<text>
+						<text class="carNames">
 						2000 Cheverolet Tahoe
 						</text>
 					<div class="showOnHover">
@@ -59,13 +59,13 @@
 					Transmission: Automatic<br>
 					Exterior Color: Gold<br>
 					</p>
-					</div> 
-			</li>
-		</a>
-		<a href="car2.html" target="_blank">
-			<li class="car2">
+				</div> 
+			</a>
+		</li>
+		<li class="car2" >
+			<a href="car2.html" target="_blank">
 				<img src="Images\Mustang.jpg" class="img-fluid carImageMain">
-					<text>
+					<text class="carNames">
 						2014 Ford Mustang 5.0
 					</text>
 				<div class="showOnHover">
@@ -76,12 +76,12 @@
 					Exterior Color: Purple<br>
 				</p>
 				</div>
-			</li>
-		</a>
-		<a href="car3.html" target="_blank">
-			<li class="car3">
+			</a>
+		</li>
+		<li class="car3">
+			<a href="car3.html" target="_blank">
 				<img src="Images\FRS.jpg" class="img-fluid carImageMain">
-				<text>
+				<text class="carNames">
 					2013 Scion FRS
 				</text>
 				<div class="showOnHover">
@@ -92,10 +92,10 @@
 						Exterior Color: Red<br>
 					</p>
 				</div>
-			</li>
-		</a>
-		<a href="car4.html" target="_blank">
-			<li class="car4">
+			</a>
+		</li>
+		<li class="car4">
+			<a href="car4.html" target="_blank">
 				<div class="slideshow-container">
 				<div class="mySlides4">
 				<img src="Images\Tundra.jpg" class="img-fluid carImageMain">
@@ -113,7 +113,7 @@
   				<a class="next" onclick="plusSlides4(1)">&#10095;</a>
 		</div>
 				
-				<text>
+				<text class="carNames">
 					2020 Toyota Tundra
 				</text>
 				<div class="showOnHover">
@@ -124,10 +124,10 @@
 						Exterior Color: Tan<br>
 					</p>
 				</div>
-			</li>
-		</a>
-		<a href="car5.html" target="_blank">
-			<li class="car5">
+			</a>
+		</li>
+		<li class="car5">
+			<a href="car5.html" target="_blank">
 				<div class="slideshow-container">
 				<div class="mySlides5">
 				<img src="Images\Lexus.jpg" class="img-fluid carImageMain responsive">
@@ -144,7 +144,7 @@
 				<a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
   				<a class="next" onclick="plusSlides5(1)">&#10095;</a>
 		</div>
-				<text>
+				<text class="carNames">
 					2005 Lexus LS430
 				</text>
 				<div class="showOnHover">
@@ -155,10 +155,10 @@
 						Exterior Color: Black<br>
 					</p>
 				</div>
-			</li>
-		</a>
-		<a href="car6.html" target="_blank">
-			<li class="car6">
+			</a>
+		</li>
+		<li class="car6">
+			<a href="car6.html" target="_blank">
 				<div class="slideshow-container">
 				<div class="mySlides6">
 				<img src="Images\Civic.jpg" class="img-fluid carImageMain">
@@ -176,7 +176,7 @@
   				<a class="next" onclick="plusSlides6(1)">&#10095;</a>
 		</div>
 				
-				<text>
+				<text class="carNames">
 					2020 Honda Civic
 				</text>
 				<div class="showOnHover">
@@ -187,13 +187,14 @@
 						Exterior Color: Red<br>
 					</p>
 				</div>
-			</li>
-		</a>
+			</a>
+		</li>
 	</ul>
 </p>
 <script class="car4script" src="car4script.js"></script>
 <script class="car5script" src="car5script.js"></script>
 <script class="car6script" src="car6script.js"></script>
+<script src="inventory.js"> </script>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
