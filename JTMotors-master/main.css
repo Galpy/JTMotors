@@ -9,20 +9,6 @@
     src: url('Fonts/conthrax-webfont.woff');
 }
 
-@media only screen and (max-width: 1080px) {
-	.carImageMain {
-			max-height: 140px;
-			min-height:140px;
-	}
-}
-
-@media only screen and (min-width:1080px) {
-	.carImageMain {
-		max-height:280px;
-		min-height: 280px;
-	}
-}
-
 html, body {
 	height: 100%;
 }
@@ -36,10 +22,6 @@ body{
 	min-height: 100%;
 }
 
-#container {
-	min-height:100%;
-}
-
 #main {
 	overflow:auto;
 	padding-bottom:10px;
@@ -49,25 +31,39 @@ body{
 	background-color: #000;
 	color:white;
 	position:relative;
-	height:10%;
+	height:auto;
 	width:100%;
 	margin-top: auto;
 	margin-bottom: 0;
 	clear: both;
 	text-align: center;
+	bottom:0;
+	font-size: 2vw;
 }
 
+#carList {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+}
 #carList li {
-	display: inline-block;
-	list-style-type: none;
+	flex: 1 1 700px;
 	background: #222;
 	border-radius: 10px;
-	padding: 1.5%;
-	margin: 3%;
-	width: 25%;
+	margin:10px;
 	color: white;
 	text-align: center;
-	vertical-align: top;
+}
+
+.carNames {
+	text-align: center;
+	font-size: 2vw;
+	vertical-align: text-bottom;
+}
+.carInfo {
+	text-align: center;
+	font-size: 2vw;
 }
 
 #carList li a {
@@ -79,6 +75,10 @@ body{
 	border-radius: 10px;
 	color: white;
 	text-align: center;
+}
+
+.searchButton {
+	vertical-align: top;
 }
 
 .navbar {
@@ -109,22 +109,8 @@ body{
 
 }
 
-#carList li .showOnHover {
-	display: inline-block;
-	text-align: left;
-}
-
-#carList li:hover .showOnHover {
-	display: inline-block;
-	text-align: left;
-}
-
 #carList li:hover {
 	box-shadow: 0 0 12px #666;
-}
-
-p.carInfo {
-	text-align: center;
 }
 
 .carImage {
@@ -135,11 +121,17 @@ p.carInfo {
 }
 
 .carImageMain {
-	width:100%;
-	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	width:70%;
+	height:70%;
 	object-fit: contain;
-	display: block;
-	position: center;
+	padding-top:2%;
+	padding-bottom:2%;
+	padding-left: 2%;
+	padding-right: 2%;
 }
 
 .addressLink, .emailLink {
@@ -147,10 +139,6 @@ p.carInfo {
 }
 a:hover {
 	text-decoration: none;
-}
-
-#footer {
-	bottom:0;
 }
 
 .slideshow-container {
@@ -165,7 +153,7 @@ a:hover {
 	top:50%;
 	width:auto;
 	margin-top: -22px;
-	padding:16px;
+	padding:75px;
 	color: white;
 	font-weight: bold;
 	transition: 0.6s ease;
@@ -182,6 +170,6 @@ a:hover {
 	left: 0;
 }
 
-.prev:hover, .next:hover {
+.prev:onclick, .next:onclick {
   background-color: rgba(0,0,0,0.8);
 }
